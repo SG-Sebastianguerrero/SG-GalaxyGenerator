@@ -7,7 +7,8 @@ import * as dat from 'dat.gui'
  * Base
  */
 // Debug
-const gui = new dat.GUI()
+const gui = new dat.GUI({ closed: true })
+
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -22,7 +23,7 @@ const parameters = {}
 parameters.count = 100000
 parameters.size = 0.01
 parameters.radius = 5
-parameters.branches = 3
+parameters.branches = 7
 parameters.spin = 1
 parameters.randomness = 0.2
 parameters.randomnessPower = 3
